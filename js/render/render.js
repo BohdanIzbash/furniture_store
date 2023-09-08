@@ -4,11 +4,6 @@ export const productsListHTML = document.querySelector(".products-items");
 export const mainPageItemsHTML = document.querySelector(".fut-items");
 export const headerCartCounter = document.querySelector(".header-cart-counter");
 export function showProductsList(arr) {
-  if (localStorage.getItem("products").length > 2) {
-    const dataLS = getLocalStorageData("products");
-    headerCartCounter.classList.remove("is-hidden");
-    headerCartCounter.innerText = dataLS.length;
-  }
   const productsHTML = arr
     .map(
       (product) => `<li class="product-card" id="${product.id}">
