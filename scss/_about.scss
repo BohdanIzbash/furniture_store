@@ -1,0 +1,17 @@
+.about-info{
+    padding-top: 45px;
+    width: 80%;
+    .about-info-title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 20px;
+        color:$main-color;
+    }
+    .about-info-rext{
+        font-size: 17px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color:$main-color;
+    }
+}

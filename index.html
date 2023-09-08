@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>task 2.8 shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav container">
+        <ul class="header-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class="logo">
+          <a href="./index.html">Comfy</a>
+        </div>
+        <div class="cart-logo">
+          <a href="#" class="cart-open"></a>
+          <div class="header-cart-counter is-hidden"></div>
+        </div>
+        <div class="backdrop is-hidden">
+          <div class="cart-field">
+            <button class="cart-close-btn" data-action="cart-close">X</button>
+            <p class="cart-title">Your cart</p>
+            <div class="cart-products">
+              <ul class="choosen-products-list"></ul>
+            </div>
+            <div class="cart-footer">
+              <div class="cart-total-price" data-action="total-price">
+                Total: $00.00
+              </div>
+              <button class="cart-checkout" data-action="checkout">
+                CHECKOUT
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content container">
+        <h1>Rest, Relax, Unwind</h1>
+        <p>Embrace ypur shoices - we do</p>
+        <a href="./products.html">show now</a>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2 class="fut-title container">Featured</h2>
+      <div class="featured-list container">
+        <ul class="fut-items">
+          <!-- <li class="fut-card">
+            <a href="./products.html"><img src="#" alt="err" /></a>
+            <div class="fut-item-text">
+              <p class="fut-item-dscrp">item discription</p>
+              <p class="fut-item-price">$29.99</p>
+            </div>
+          </li>
+          <li class="fut-card">
+            <a href="./products.html"><img src="#" alt="err" /></a>
+            <div class="fut-item-text">
+              <p class="fut-item-dscrp">item discription</p>
+              <p class="fut-item-price">$29.99</p>
+            </div>
+          </li>
+          <li class="fut-card">
+            <a href="./products.html"><img src="#" alt="err" /></a>
+            <div class="fut-item-text">
+              <p class="fut-item-dscrp">item discription</p>
+              <p class="fut-item-price">$29.99</p>
+            </div>
+          </li> -->
+        </ul>
+        <button class="all-products-btn">
+          <a href="./products.html">ALL PRODUCTS</a>
+        </button>
+      </div>
+    </section>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

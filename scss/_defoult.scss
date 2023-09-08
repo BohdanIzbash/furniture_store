@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.page-title{
+    background: #e7e4e4;
+    padding: 65px 0;
+    font-size: 40px;
+}
+
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

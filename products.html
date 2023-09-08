@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav container">
+        <ul class="header-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class="logo">
+          <a href="./index.html">Comfy</a>
+        </div>
+        <div class="cart-logo">
+          <a href="#" class="cart-open"></a>
+          <div class="header-cart-counter is-hidden"></div>
+        </div>
+        <div class="backdrop is-hidden">
+          <div class="cart-field">
+            <button class="cart-close-btn" data-action="cart-close">X</button>
+            <p class="cart-title">Your cart</p>
+            <div class="cart-products">
+              <ul class="choosen-products-list"></ul>
+            </div>
+            <div class="cart-footer">
+              <div class="cart-total-price" data-action="total-price">
+                Total: $00.00
+              </div>
+              <button class="cart-checkout" data-action="checkout">
+                CHECKOUT
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="products-title page-title">
+      <p class="product-text container">Home / Products</p>
+    </div>
+
+    <div class="products-field container">
+      <nav class="products-nav">
+        <div class="products-search">
+          <input type="text" placeholder="search" class="search" />
+        </div>
+        <div class="products-filter">
+          <p class="filter-title">Company</p>
+          <ul class="filter">
+            <li class="filter-item" data-filter="all">All</li>
+            <li class="filter-item" data-filter="ikea">Ikea</li>
+            <li class="filter-item" data-filter="marcos">Marcos</li>
+            <li class="filter-item" data-filter="caressa">Caressa</li>
+            <li class="filter-item" data-filter="liddy">Liddy</li>
+          </ul>
+        </div>
+        <div class="products-range">
+          <p class="range-title">Price</p>
+          <input type="range" class="range" min="0" max="100" value="100" />
+          <p class="range-value">
+            <span>Value: $100</span>
+          </p>
+        </div>
+      </nav>
+      <div class="products-list">
+        <ul class="products-items"></ul>
+      </div>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

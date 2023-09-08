@@ -1,0 +1,82 @@
+.products-field{
+    display: flex;
+    padding-top: 30px;
+    column-gap: 10px;
+    .products-nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .products-search{
+            input{
+                padding: 10px;
+                background: #c8f5f4;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .filter-title{
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .filter-item{
+            font-weight: 700;
+            line-height: 35px;
+            color: #747171;
+            cursor: pointer;
+            &:hover{
+                color: #4fa299;
+            }
+        }
+        .range-title{
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    .products-list{
+        .products-items{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            width: 100%;
+        }
+        .product-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+            margin-bottom: 35px;
+            .prod-card-info{
+                display: flex;
+                column-gap: 30px;
+                .prod-card-dscrp{
+                    color:$main-color;
+                    text-align: center;
+                }
+                .prod-card-price{
+                    text-align: center;
+                    font-weight: 600;
+                }
+            }
+            img{
+                width: 350px;
+                height: 200px;
+            }
+            .add-to-cart-btn{
+                width: 100%;
+                padding: 7px;
+                background: #bdf6f1;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                &:hover{
+                    background: #8dbab6;
+                }
+        }
+    }
+}
+}

@@ -1,0 +1,16 @@
+
+.cart-items-counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    .items-control{
+        cursor: pointer;
+        background: #eee5cd;
+        width: 20px;
+        text-align: center;
+        &:hover{
+            background: #b6965a;
+        }
+    }
+}
